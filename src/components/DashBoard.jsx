@@ -31,9 +31,9 @@ function DashBoard() {
           >
             {token ? (
               <>
-                <Dropdown.Item onClick={() => handleRedirect('/my_events')}>My Events</Dropdown.Item>
+                {/* <Dropdown.Item onClick={() => handleRedirect('/my_events')}>My Events</Dropdown.Item> */}
                 <Dropdown.Item onClick={() => handleRedirect('/history')}>Participated</Dropdown.Item>
-                <Dropdown.Item onClick={() => handleRedirect('/host_events')}>Host Event</Dropdown.Item>
+                {/* <Dropdown.Item onClick={() => handleRedirect('/host_events')}>Host Event</Dropdown.Item> */}
                 <Dropdown.Item onClick={() => handleRedirect('/profile')}>Profile</Dropdown.Item>
                 <Dropdown.Item onClick={handleLogout}>Logout</Dropdown.Item>
               </>

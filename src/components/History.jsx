@@ -5,7 +5,7 @@ function History() {
   const attendedEvents =  [] || location.state.attendedEvents;
 
   return (
-    <table class="table">
+    <table style={{height: '600px'}} class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
