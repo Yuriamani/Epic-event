@@ -13,6 +13,7 @@ import ProfileForm from './components/ProfileForm';
 import History from './components/History';
 import MyEvents from './components/MyEvents';
 import ProtectedRoute from "./services/ProtectedRoute";  // Import the ProtectedRoute component
+import Testimonial from './components/Testimonal';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route path="/services" element={<About/>} />
+        <Route path="/about" element={<Testimonial/>} />
         <Route
             path="/events"
             element={<ProtectedRoute><Events /></ProtectedRoute>} 

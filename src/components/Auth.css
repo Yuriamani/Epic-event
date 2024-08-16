@@ -1,11 +1,11 @@
-body {
+/*{ body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
     margin: 0;
-    background-color: #d3d3d3; /* grey background outside the frame */
-}
+    background-color: #d3d3d3; 
+ }*/
 
 .form-container {
     display: flex;

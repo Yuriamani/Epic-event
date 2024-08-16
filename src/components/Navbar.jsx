@@ -8,6 +8,7 @@ import DashBoard from './DashBoard';
 
 function MyNavbar() {
   return (
+   <div >
     <nav>
       <Navbar bg="dark" variant="dark" style={{ top: 0,left: 0,width: '100%',zIndex: 1,height: '80px'}}>
         <Container>
@@ -19,13 +20,13 @@ function MyNavbar() {
             <Link to="/"><Navbar.Brand>Home</Navbar.Brand></Link>
             <Link to="/services"><Navbar.Brand>Services</Navbar.Brand></Link>
             <Link to="/events"><Navbar.Brand>Events</Navbar.Brand></Link>
-            <Link to="/login"><Navbar.Brand>Login</Navbar.Brand></Link>
-            <Link to="/signup"><Navbar.Brand>Sign Up</Navbar.Brand></Link>
+            <Link to="/about"><Navbar.Brand>Testimony</Navbar.Brand></Link>
           <DashBoard/>
           </Nav>
         </Container>
       </Navbar>
     </nav>
+   </div>
   );
 }
 

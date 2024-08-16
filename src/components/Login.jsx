@@ -51,7 +51,7 @@ function Login() {
     }
   };
 
-  return (
+  return (<>
     <div className="form-container">
             <form onSubmit={handleSubmit} className='form'>
             {successMessage && <div className="success-message">{successMessage}</div>}
@@ -98,6 +98,7 @@ function Login() {
                 </div>
             </form>
         </div>
+        </>
   );
 }
 
