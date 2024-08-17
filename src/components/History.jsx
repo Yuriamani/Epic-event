@@ -2,7 +2,12 @@ import { useLocation } from 'react-router-dom';
 
 function History() {
   const location = useLocation();
-  const attendedEvents =  [] || location.state.attendedEvents;
+  // Check if location and location.state are defined
+  const attendedEvents = location && location.state ? location.state.attendedEvents : [];
+
+  if (!attendedEvents || attendedEvents.length === 0) {
+    return <div style={{height: '600px'}}> No event selected</div>;
+  }
 
   return (
     <table style={{height: '600px'}} class="table">

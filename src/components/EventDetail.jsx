@@ -17,7 +17,10 @@ function EventDetail() {
       .then(data => setEvent(data));
   }, [id]);
 
-  const handleAttendEvent = () => {
+  const handleBuyTicket = () => {
+    alert('Buy Ticket')
+
+    window.location.href = "https://desolate-ridge-69417-63835eb682ea.herokuapp.com/";
     // Mark the event as attended
     setHasAttended(true);
   
@@ -46,12 +49,7 @@ function EventDetail() {
         <h2>Attend Event</h2>
               <div className="ticket-item">
                 <p>Capacity - {event.capacity}</p>
-                <button onClick={handleAttendEvent}>Attend Now</button>
-          {/* <h2>Buy Tickets</h2>
-              <div className="ticket-item">
-                <p>VIP tickets - ${event.vip_tickets}</p>
-                <p>Mwananchi tickets - ${event.normal_tickets}</p>
-                <button onClick={() => alert('Buy Ticket')}>Buy Now</button> */}
+                <button onClick={handleBuyTicket}>Buy Now</button>
               </div>
         </div>
       </div>
