@@ -14,6 +14,9 @@ import History from './components/History';
 import MyEvents from './components/MyEvents';
 import ProtectedRoute from "./services/ProtectedRoute";  // Import the ProtectedRoute component
 import Testimonial from './components/Testimonal';
+import HostEvent from './components/HostEvent';
+import UpdateEvent from './components/UpdateEvent';
+import Users from './components/Users';
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
         <Route path="/dashboard" element={<DashBoard/>} />
         <Route path="/history" element={<History/>} />
         <Route path="/my_events" element={<MyEvents/>} />
+        <Route path="/host_events" element={<HostEvent/>} />
+        <Route path="/update_event/:id" element={<UpdateEvent/>} />
+        <Route path="/users" element={<Users/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>
